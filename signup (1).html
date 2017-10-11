@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+body{
+background-color:#cccccc;
+}
+div.center {
+    margin:auto;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+  text-align: center;
+    border:black;
+}
+  legend
+{
+font-size:30px;
+}
+label{
+font-size:18px;
+color:black;
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-sizing: border-box;
+text-color:black;
+}
+input[type=date], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-sizing: border-box;
+text-color:black;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color:grey;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: brown;
+}
+</style>
+<div class="center">
+<form action="/action_page.php">
+ <legend>Sign Up:</legend>
+  <input type="text" name="firstname" placeholder="First name">
+  <br>
+  <input type="text" name="lastname" placeholder="last name">
+  <br> 
+ <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br>
+<label>Birthday:</label>
+  <input type="date" name="bday"><br>
+  <input type="text" name="mobile number" placeholder="phone" maxlength="10"><br>
+<input type="text" name="email" placeholder="mail"><br>
+    <select id="country" name="country" placeholder="select country">
+<option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="russia">RUSSIA</option>
+ 
+ <option value="usa">USA</option>
+    </select><br>
+  <a href="login.html" class="btn btn-info" role="button">Sign up</a>
+
+</form> 
+</div>
+</body>
+</html>

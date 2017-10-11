@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+body{
+background-color:#cccccc;
+}
+div.center {
+    margin:auto;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+  text-align: center;
+    border:black;
+}
+legend
+{
+font-size:30px;
+}
+  
+label{
+font-size:18px;
+color:black;
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-sizing: border-box;
+text-color:black;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color:grey;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: brown;
+}
+</style>
+<div class="center">
+<form action="/action_page.php">
+ <legend>log in:</legend>
+  <input type="text" name="username" placeholder="enter username">
+  <br>
+  <input type="text" name="password" placeholder="enter password" minlength="8">
+  <br> 
+<a href="save2.html" class="btn btn-info" role="button">Log in</a>
+</form> 
+
+
+</div>
+</body>
+</html>
